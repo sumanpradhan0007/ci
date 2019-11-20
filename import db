@@ -1,0 +1,19 @@
+<?php
+//Table structure for table import
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
+  `first_name` varchar(100) NOT NULL COMMENT 'First Name', 
+  `last_name` varchar(100) NOT NULL COMMENT 'Last Name',
+  `user_name` varchar(100) NOT NULL COMMENT 'Last Name',
+  `email` varchar(255) NOT NULL COMMENT 'Email Address',
+  `contact_no` VARCHAR(16) NOT NULL COMMENT 'Contact No',
+  `password` varchar(255) NOT NULL COMMENT 'Password',
+  `address` TEXT NOT NULL COMMENT 'Address',
+  `dob` varchar(15) NOT NULL COMMENT 'Date Of Birth',  
+  `verification_code` varchar(255) NOT NULL COMMENT 'verification Code',
+  `created_date` varchar(12) NOT NULL COMMENT 'created timestamp',
+  `modified_date` varchar(12) NOT NULL COMMENT 'modified timestamp',
+  `status` char(1) NOT NULL COMMENT '0=pending, 1=active, 2=delete',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='datatable demo table' AUTO_INCREMENT=1;
+?>
